@@ -98,8 +98,20 @@ header img {
 }
 .grid figure img {
   width: 100%;
+  padding: 0 40px;
+  margin: 0 auto 30px;
 }
-
+#candy {
+  width: 80%;
+  margin: 90px auto 0;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
+a:hover {
+  text-decoration: underline;
+}
 .grid {
   display: grid;
   grid-template-columns: repeat(6, 1fr);
@@ -163,7 +175,7 @@ header img {
   grid-column: 1/ 7;
 }
 footer {
-  border-top: 1px solid #2e373a55;
+  border-top: 1px solid #39393955;
   min-height: 100vh;
   margin-bottom: 60px;
 }
@@ -261,11 +273,12 @@ footer .content {
 }
 .autoShow {
   animation: autoShowAnimation both;
-  animation-timeline: view(70% 5%);
+  animation-timeline: view(70% 10%);
 }
 @keyframes autoShowAnimation {
   from {
     opacity: 0;
+    filter: blur(100px);
     transform: translateY(200px) scale(0.3);
   }
   to {
@@ -300,4 +313,3 @@ footer .content {
   background: #474747;
   border-radius: 4px;
 }
-
