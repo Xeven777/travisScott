@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TRAVIS SCOTT</title>
+    <link rel="stylesheet" href="./style.css">
+    <script src="https://unpkg.com/lenis@1.1.10/dist/lenis.min.js"></script>
+    <link rel="stylesheet" href="https://unpkg.com/lenis@1.1.10/dist/lenis.css">
+</head>
+
+<body>
+    <main>
+        <!-- <audio id="song" autoplay loop>
+            <source src="./fein.mp3" type="audio/mp3">
+            Your browser does not support the audio element.
+        </audio> -->
+        <header>
+            <img src="images/6.png" alt="" class="invert">
+            <button type="button" id="playButton">
+                PLAY
+            </button>
+        </header>
+        <section class="banner">
+            <div class="content">
+                <h1 class="left">TRAVIS SCOTT</h1>
+                <div class="right">
+                    <h2>FE!N</h2>
+                    <p>UTOPIA</p>
+                    <p>ft. Playboi Carti
+                    </p>
+                </div>
+                <div class="image">
+                    <img src="images/travis.png" alt="">
+                </div>
+            </div>
+        </section>
+
+
+        <section class="grid grid-1">
+            <figure>
+                <img src="images/sich.png" alt="">
+            </figure>
+            <figure>
+                <img src="images/3.png" alt="" class="autoRotate">
+            </figure>
+            <h2 class="autoShow">Introduce</h2>
+        </section>
+
+        <section class="grid grid-2">
+            <div class="autoShow">
+                <figure>
+                    <img src="images/6.png" alt="">
+                </figure>
+                <p>
+                    Scott's third studio album, Astroworld (2018) was released to widespread critical acclaim and became
+                    his second
+                    consecutive number one album on the Billboard 200. The album also produced his first Billboard Hot
+                    100 number-one
+                    single, "Sicko Mode" (featuring Drake)
+                </p>
+            </div>
+            <div class="autoShow">
+                Jacques Bermon Webster II (born April 30, 1991), known professionally as Travis Scott (stylized as
+                Travis $cott), is an
+                American rapper, singer, songwriter, and record producer. Scott has had four number-one hits on the U.S.
+                Billboard Hot
+                100 chart, along with a total of over one hundred charting songs. He has been nominated for ten Grammy
+                Awards and won a
+                Latin Grammy Award, Billboard Music Award, MTV Video Music Award, and multiple BET Hip Hop Awards. As of
+                2023, Scott has
+                sold over 49 million certified records in the U.S. alone.
+            </div>
+
+            <div class="autoShow">
+                <figure>
+                    <img src="images/2.png" alt="">
+                </figure>
+                <p>Along with his highly publicized relationship with American media personality Kylie Jenner, Scott has
+                    collaborated with
+                    organizations including Nike, Dior, and McDonald's. His Cactus Jack record label, founded in 2017,
+                    has signed artists
+                    including Don Toliver and Sheck Wes. Scott has gained notoriety for controversies and legal issues
+                    regarding concert
+                    safety. In November 2021, a mass-casualty crowd crush occurred during Scott's hometown performance
+                    at his annual
+                    Astroworld Festival, causing ten deaths and hundreds of injuries.
+                </p>
+            </div>
+            <div class="autoShow">
+                <figure>
+                    <img src="images/candy.png" alt="">
+                </figure>
+            </div>
+        </section>
+
+        <section class="grid grid-3">
+            <div class="autoBLur">LUNDEV</div>
+            <div class="autoBLur">DESIGNER</div>
+            <div class="autoBLur">DEVELOPER</div>
+            <div class="autoBLur">SUBCRIBE +</div>
+            <div class="autoBLur">SEE MORE &#8599;</div>
+        </section>
+    </main>
+    <footer>
+        <div class="grid grid-5 content">
+            <div>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vero labore numquam explicabo itaque qui,
+                assumenda temporibus aspernatur ex quae corrupti, ipsa quod esse hic debitis quidem obcaecati aperiam!
+                Incidunt blanditiis facilis a et provident vel aspernatur deleniti sint debitis numquam ducimus
+                recusandae assumenda eligendi explicabo id unde quasi dicta ut cumque, tempore accusamus ipsa similique
+                repellat. Deserunt delectus sint debitis ad sequi laboriosam inventore consequatur nemo neque cum est
+                nostrum eveniet aliquid unde distinctio, omnis sed vitae amet nobis atque.</div>
+            <div>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vero labore numquam explicabo itaque qui,
+                assumenda temporibus aspernatur ex quae corrupti, ipsa quod esse hic debitis quidem obcaecati aperiam!
+                Incidunt blanditiis facilis a et provident vel aspernatur deleniti sint debitis numquam ducimus
+                recusandae assumenda eligendi explicabo id unde quasi dicta ut cumque, tempore accusamus ipsa similique
+                repellat. Deserunt delectus sint debitis ad sequi laboriosam inveum est nostrum eveniet aliquid unde
+                distinctio, omnis sed vitae amet nobis atque.</div>
+            <div>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vero labore numquam explicabo itaque qui,
+                assumenda temporibus aspernatur ex quae corrupti, ipsa quod esse hic debitis quidem obcaecati aperiam!
+                Incidunt blanditiis facilis a et provident vel aspernatur deleniti sint debitis numquam ducimus
+                recusandae assumenda eligendi explicabo id unde quasi dicta ut cumque, tempore accusamus ipsa similique
+                repellat. Deserunt delectus sint debitis ad sequi laboriosam inventore consequatur nemo neque cum est
+                nos atque.</div>
+            <div>
+                <figure>
+                    <img src="images/8.png" alt="">
+                </figure>
+            </div>
+        </div>
+    </footer>
+    <script>
+        document.getElementById('playButton').addEventListener('click', function () {
+            var audio = document.getElementById('song');
+            var button = document.getElementById('playButton');
+
+            if (audio.paused) {
+                audio.play();
+                button.textContent = 'PAUSE';
+            } else {
+                audio.pause();
+                button.textContent = 'PLAY';
+            }
+        });
+        const lenis = new Lenis();
+        function raf(time) {
+            lenis.raf(time);
+            requestAnimationFrame(raf);
+        }
+        requestAnimationFrame(raf);
+    </script>
+</body>
+
+</html>
